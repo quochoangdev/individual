@@ -1,0 +1,144 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.introduce-heading {
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+.introduce-partition {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 90px;
+  margin-top: -4px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1e9600, #fff200, #ff0000);
+}
+.introduce-content {
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-top: 22px;
+}
+
+.introduce-content p:nth-child(1) {
+  margin-bottom: 8px;
+}
+
+// description
+.description {
+  margin-top: 24px;
+}
+
+.description-heading {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.description-partition {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 70px;
+  margin-top: -3px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1e9600, #fff200, #ff0000);
+}
+
+.description-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  margin-left: -12px;
+}
+
+.project {
+  height: 240px;
+  width: 422px;
+  color: #000;
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-img {
+  flex: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: var(--default-border-radius);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  &:hover .img {
+    transform: scale(1.1);
+    border-radius: var(--default-border-radius);
+  }
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 174px;
+  transition: transform 0.3s linear;
+  border-radius: var(--default-border-radius);
+}
+
+.project-name {
+  height: 42px;
+  padding: 8px 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+// motivation
+.motivation {
+  margin-top: 24px;
+}
+
+.motivation-heading {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.motivation-partition {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 70px;
+  margin-top: -3px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1e9600, #fff200, #ff0000);
+}
+.motivation-content {
+  margin-top: 20px;
+}
+.motivation-slidebar {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--default-border-radius);
+  background: linear-gradient(-90deg, #e1eec3, #f05053);
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .project {
+    height: 194px;
+    width: 298px;
+  }
+  .img {
+    transition: none;
+  }
+}
+@media (max-width: 740px) {
+  .project {
+    padding: 12px 0;
+  }
+  .img {
+    transition: none;
+  }
+  .motivation-slidebar {
+    height: 300px;
+  }
+}

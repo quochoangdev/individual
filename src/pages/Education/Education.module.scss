@@ -1,0 +1,219 @@
+// comon
+.border-left {
+  border-left: 1px dashed #aaa;
+}
+
+.wrapper {
+  width: 100%;
+}
+.wrapper-title {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 90px;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #1e9600, #fff200, #ff0000);
+  }
+}
+.wrapper-content {
+}
+
+.education {
+  margin: 28px 0;
+  display: flex;
+  align-items: center;
+}
+
+.block-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #304cfd;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.education .icon {
+  color: #304cfd;
+  width: 25px;
+}
+
+.component {
+  padding: 0 0 28px 16px;
+}
+
+@keyframes timeline-dot {
+  0% {
+    transform: translateX(-55%) scale(1.2);
+  }
+  45% {
+    transform: translateX(-55%) scale(1.7);
+  }
+  60% {
+    transform: translateX(-55%) scale(1.9);
+  }
+  100% {
+    transform: translateX(-55%) scale(1.2);
+  }
+}
+.title {
+  transform: translateY(-4px);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -16px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #94b1f0;
+    animation: timeline-dot 3s infinite;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -16px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translateX(-55%);
+    background: #304cfd;
+  }
+}
+.timeline {
+  font-size: 1.6rem;
+  color: #707070;
+  margin-top: -5px;
+  padding-bottom: 8px;
+}
+.description {
+  text-align: justify;
+}
+
+.story {
+  color: #9b0000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+// skill
+.skills {
+  width: 100%;
+  padding: 24px;
+  min-height: 100px;
+  border: solid 2px #fff;
+  border-radius: var(--default-border-radius);
+}
+
+.skill-item {
+  position: relative;
+  height: 24px;
+  width: 100%;
+  border-radius: var(--default-border-radius);
+  background: #c4e0e8;
+}
+
+.margin-top-24 {
+  margin-top: 24px;
+}
+
+.skill-percent {
+  position: relative;
+  height: 24px;
+  border-radius: var(--default-border-radius);
+  background: linear-gradient(135deg, #009fff, #ec2f4b);
+}
+
+.percent {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-right: 8px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.percent-15 {
+  width: 15%;
+  animation: percent15 1s forwards;
+}
+.percent-30 {
+  width: 30%;
+  animation: percent30 1s forwards;
+}
+.percent-40 {
+  width: 40%;
+  animation: percent40 1s forwards;
+}
+.percent-60 {
+  width: 60%;
+  animation: percent60 1s forwards;
+}
+
+@keyframes percent15 {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 15%;
+  }
+}
+@keyframes percent30 {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 30%;
+  }
+}
+@keyframes percent40 {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 40%;
+  }
+}
+@keyframes percent60 {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.skill-name {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-left: 8px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// css target
+.partition {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 70px;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+  }
+}

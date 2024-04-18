@@ -1,0 +1,55 @@
+link project : https://nghiane.online/
+
+echo "# Per-info" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/QuocHoang03/Per-info.git
+git push -u origin main
+
+git remote add origin https://github.com/QuocHoang03/Per-info.git
+git branch -M main
+git push -u origin main
+
+
+Các bước tạo 1 project
+B1 : Tạo dự án : npm create-react-app 'nameProject'
+B2 : Ghi đè thư viện : Customize-cra
+B3 : Cấu hình auto format form Prettier : https://github.com/sondnpt00343/tiktok-ui
+B4 : 
+	Tạo folder GlobalStyle
+	Cài đặt SASS : npm i -D sass
+B5 : 
+	Reset css : reset css normalize 
+		npm : npm install --save normalize.css
+		@import normalize.css
+		default font-family, font-size, light-height
+B6 : cấu hình Router/Layout cho project
+	Phân tích layout
+	cài đặt react-router-dom : npm i react-router-dom
+	tạo pages
+	BrowerRouter cho app
+	folder routes để cấu hình routes ra ngoài
+	xây dựng cơ chế tải layout
+	Tạo folder layout/DefaultLayout
+
+
+Router
+--> npm i react-router-dom
+--> npm i -D react-router-dom
+--> npm i -D react-router-dom@latest
+Clsx
+--> npm i clsx
+ClassName
+--> npm i classnames
+Đổi cổng
+--> create file : .env.local "PORT = 3001"
+Customize-cra
+--> ghi đè thư viện
+Prettier
+--> auto format form
+Sass
+--> npm i -D sass
+Reset css
+--> reset css normalize npm : npm install --save normalize.css
